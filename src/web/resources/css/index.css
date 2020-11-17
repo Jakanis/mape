@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 10px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.logo {
+  float: left;
+  height: 80px;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.footerr {
+  float: bottom;
+  width: 100%;
+  padding: 10px 10px;
+  background: red;
+}
+
+.locale_picker {
+  float: right;
+  margin-top: 10px;
+}
+
+.tableW3 {
+  border-collapse: collapse;
+  width: 96%;
+  margin-left: 2%;
+}
+
+.tableW3 td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tableW3 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tableW3 tr:hover {
+  background-color: #ddd;
+}
+
+.tableW3 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.placeholder {
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('/resources/img/logo.png');
+}
+
+.add-button {
+  padding-left: 50%;
+}
+
+.button {
+  background-color: #4CAF50;
+  float: right;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 2%;
+  cursor: pointer;
+}
+
+@-webkit-keyframes blinker {
+  from {
+    opacity: 1.0;
+  }
+  to {
+    opacity: 0.0;
+  }
+}
+
+.blink {
+  background-color: palevioletred;
+  text-decoration: blink;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+}
+
+
+.center {
+  margin-top: 3px;
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0px 4px;
+}
+
+.pagination a.current {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
